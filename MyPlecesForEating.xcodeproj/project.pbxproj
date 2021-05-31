@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		44A6BDE92664CAB200BB9A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BDE82664CAB200BB9A44 /* AppDelegate.swift */; };
 		44A6BDEB2664CAB200BB9A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BDEA2664CAB200BB9A44 /* SceneDelegate.swift */; };
-		44A6BDED2664CAB200BB9A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BDEC2664CAB200BB9A44 /* ViewController.swift */; };
 		44A6BDF02664CAB200BB9A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A6BDEE2664CAB200BB9A44 /* Main.storyboard */; };
 		44A6BDF22664CAB500BB9A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A6BDF12664CAB500BB9A44 /* Assets.xcassets */; };
 		44A6BDF52664CAB500BB9A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A6BDF32664CAB500BB9A44 /* LaunchScreen.storyboard */; };
+		44A6BE032664D05400BB9A44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE022664D05400BB9A44 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44A6BDE52664CAB200BB9A44 /* MyPlecesForEating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlecesForEating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A6BDE82664CAB200BB9A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A6BDEA2664CAB200BB9A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44A6BDEC2664CAB200BB9A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44A6BDEF2664CAB200BB9A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44A6BDF12664CAB500BB9A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A6BDF42664CAB500BB9A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A6BDF62664CAB500BB9A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A6BE022664D05400BB9A44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		44A6BDE72664CAB200BB9A44 /* MyPlecesForEating */ = {
 			isa = PBXGroup;
 			children = (
-				44A6BDE82664CAB200BB9A44 /* AppDelegate.swift */,
-				44A6BDEA2664CAB200BB9A44 /* SceneDelegate.swift */,
-				44A6BDEC2664CAB200BB9A44 /* ViewController.swift */,
-				44A6BDEE2664CAB200BB9A44 /* Main.storyboard */,
-				44A6BDF12664CAB500BB9A44 /* Assets.xcassets */,
-				44A6BDF32664CAB500BB9A44 /* LaunchScreen.storyboard */,
-				44A6BDF62664CAB500BB9A44 /* Info.plist */,
+				44A6BDFF2664CF2500BB9A44 /* Views */,
+				44A6BE002664CF9A00BB9A44 /* Controllers */,
+				44A6BDFD2664CEB100BB9A44 /* SupportFiles */,
 			);
 			path = MyPlecesForEating;
+			sourceTree = "<group>";
+		};
+		44A6BDFD2664CEB100BB9A44 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				44A6BDE82664CAB200BB9A44 /* AppDelegate.swift */,
+				44A6BDEA2664CAB200BB9A44 /* SceneDelegate.swift */,
+				44A6BDF12664CAB500BB9A44 /* Assets.xcassets */,
+				44A6BDF62664CAB500BB9A44 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		44A6BDFF2664CF2500BB9A44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44A6BDEE2664CAB200BB9A44 /* Main.storyboard */,
+				44A6BDF32664CAB500BB9A44 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44A6BE002664CF9A00BB9A44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44A6BE022664D05400BB9A44 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A6BDED2664CAB200BB9A44 /* ViewController.swift in Sources */,
+				44A6BE032664D05400BB9A44 /* MainViewController.swift in Sources */,
 				44A6BDE92664CAB200BB9A44 /* AppDelegate.swift in Sources */,
 				44A6BDEB2664CAB200BB9A44 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84N4PJWN7L;
-				INFOPLIST_FILE = MyPlecesForEating/Info.plist;
+				INFOPLIST_FILE = MyPlecesForEating/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84N4PJWN7L;
-				INFOPLIST_FILE = MyPlecesForEating/Info.plist;
+				INFOPLIST_FILE = MyPlecesForEating/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
