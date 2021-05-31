@@ -13,6 +13,7 @@
 		44A6BDF22664CAB500BB9A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A6BDF12664CAB500BB9A44 /* Assets.xcassets */; };
 		44A6BDF52664CAB500BB9A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A6BDF32664CAB500BB9A44 /* LaunchScreen.storyboard */; };
 		44A6BE032664D05400BB9A44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE022664D05400BB9A44 /* MainViewController.swift */; };
+		44A6BE072665115600BB9A44 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE062665115600BB9A44 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		44A6BDF42664CAB500BB9A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A6BDF62664CAB500BB9A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A6BE022664D05400BB9A44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44A6BE062665115600BB9A44 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		44A6BDE72664CAB200BB9A44 /* MyPlecesForEating */ = {
 			isa = PBXGroup;
 			children = (
+				44A6BE052665113900BB9A44 /* Cell */,
 				44A6BDFF2664CF2500BB9A44 /* Views */,
 				44A6BE002664CF9A00BB9A44 /* Controllers */,
 				44A6BDFD2664CEB100BB9A44 /* SupportFiles */,
@@ -89,6 +92,14 @@
 				44A6BE022664D05400BB9A44 /* MainViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44A6BE052665113900BB9A44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A6BE062665115600BB9A44 /* CustomTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			files = (
 				44A6BE032664D05400BB9A44 /* MainViewController.swift in Sources */,
 				44A6BDE92664CAB200BB9A44 /* AppDelegate.swift in Sources */,
+				44A6BE072665115600BB9A44 /* CustomTableViewCell.swift in Sources */,
 				44A6BDEB2664CAB200BB9A44 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
