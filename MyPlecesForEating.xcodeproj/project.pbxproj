@@ -15,6 +15,7 @@
 		44A6BE032664D05400BB9A44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE022664D05400BB9A44 /* MainViewController.swift */; };
 		44A6BE072665115600BB9A44 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE062665115600BB9A44 /* CustomTableViewCell.swift */; };
 		44A6BE0B266515BA00BB9A44 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6BE0A266515BA00BB9A44 /* PlaceModel.swift */; };
+		44C1DEA9266A625A00C6E576 /* NewPlaceViewControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1DEA8266A625900C6E576 /* NewPlaceViewControllerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		44A6BE022664D05400BB9A44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		44A6BE062665115600BB9A44 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		44A6BE0A266515BA00BB9A44 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		44C1DEA8266A625900C6E576 /* NewPlaceViewControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewControllerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				44A6BE022664D05400BB9A44 /* MainViewController.swift */,
+				44C1DEA8266A625900C6E576 /* NewPlaceViewControllerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				44A6BE0B266515BA00BB9A44 /* PlaceModel.swift in Sources */,
 				44A6BE072665115600BB9A44 /* CustomTableViewCell.swift in Sources */,
 				44A6BDEB2664CAB200BB9A44 /* SceneDelegate.swift in Sources */,
+				44C1DEA9266A625A00C6E576 /* NewPlaceViewControllerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
