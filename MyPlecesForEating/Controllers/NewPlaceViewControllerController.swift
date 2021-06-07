@@ -9,7 +9,7 @@ import UIKit
 
 class NewPlaceViewControllerController: UITableViewController {
     // MARK: - Variables
-    var newPlace: Place?
+    var newPlace = Place()
     var imageIsChanged = false
     // MARK: - Outlet
     @IBOutlet weak var placeImage: UIImageView!
@@ -20,6 +20,10 @@ class NewPlaceViewControllerController: UITableViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async {
+            self.newPlace.savePlaces()
+        }
         
         tableView.tableFooterView = UIView()
         saveButton.isEnabled = false
@@ -72,11 +76,10 @@ class NewPlaceViewControllerController: UITableViewController {
             image = #imageLiteral(resourceName: "imagePlaceholder")
         }
         
-        newPlace = Place(name: placeName.text!,
-                         location: placeLocation.text,
-                         type: placeType.text,
-                         image: image,
-                         restaurantImage: nil)
+//        newPlace = Place(name: placeName.text!,
+//                         location: placeLocation.text,
+//                         type: placeType.text,
+//                         image: image)
     }
     // MARK: - Action
     @IBAction func cancelAction(_ sender: Any) {
