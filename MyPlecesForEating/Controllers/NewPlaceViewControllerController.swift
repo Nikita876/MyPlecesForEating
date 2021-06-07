@@ -8,7 +8,10 @@
 import UIKit
 
 class NewPlaceViewControllerController: UITableViewController {
+    // MARK: - Outlet
+    @IBOutlet weak var imageOfPlace: UIImageView!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,14 +56,23 @@ extension NewPlaceViewControllerController: UITextFieldDelegate {
     }
 }
 // MARK: - Work with image
-extension NewPlaceViewControllerController {
+extension NewPlaceViewControllerController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func chooseImagePicker(sourse: UIImagePickerController.SourceType) {
         
         if UIImagePickerController.isSourceTypeAvailable(sourse) {
             let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
             imagePicker.allowsEditing = true
             imagePicker.sourceType = sourse
             present(imagePicker, animated: true)
         }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        imageOfPlace.image = info[.editedImage] as? UIImage
+        imageOfPlace.contentMode = .scaleAspectFill
+        imageOfPlace.clipsToBounds = true
+        dismiss(animated: true)
     }
 }
