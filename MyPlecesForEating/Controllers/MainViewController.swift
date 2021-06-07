@@ -17,7 +17,6 @@ class MainViewController: UITableViewController {
         
         places = realm.objects(Place.self)
     }
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.isEmpty ? 0 : places.count
@@ -37,6 +36,15 @@ class MainViewController: UITableViewController {
         cell.imageOfPlace?.clipsToBounds = true
 
         return cell
+    }
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        /// Delete cell 
+        if editingStyle == .delete {
+            let place = places[indexPath.row]
+            StorageManager.deleteObject(place)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
     // MARK: - Action
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
